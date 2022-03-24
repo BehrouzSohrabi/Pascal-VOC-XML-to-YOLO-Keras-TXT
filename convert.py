@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as bs
 def main():
     annotations = ''
     classes = set()
-    filename_prefix = 'dataset/train/images/'
+    filename_prefix = 'images/'
     directory = 'labels'
     filenames = glob.glob(directory+"/*.xml")
     for filename in tqdm(filenames):
